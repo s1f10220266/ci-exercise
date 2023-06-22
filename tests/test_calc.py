@@ -1,6 +1,6 @@
 import unittest
 from project.calc import fact
-
+from project.calc import gcd
 
 class TestTarget(unittest.TestCase):
     def test_fact_positive(self):
@@ -21,7 +21,7 @@ class TestTarget(unittest.TestCase):
     def test_gcd_negative(self):
         self.assertEqual(gcd(-15, -25), 5)
         self.assertEqual(gcd(-24, 32), 6)
-        
+
     def test_gcd_zero(self):
         self.assertEqual(gcd(5, 0), 5)
         self.assertEqual(gcd(0, 7), 7)
