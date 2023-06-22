@@ -14,7 +14,7 @@ def gcd(a, b):
         return abs(a)
     elif a == 0 and b == 0:
         return 0
-    
+
     a = abs(a)
     b = abs(b)
     while b != 0:
